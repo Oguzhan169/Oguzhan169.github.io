@@ -1,41 +1,80 @@
 
-ul {
+#menu {
+
+
+    margin: 0px;
+
+
+    padding: 0px;
+
+
     list-style-type: none;
 
-    margin: 0;
 
-    padding: 0;
-
-    overflow: hidden;
-
-    background-color: #27ae60;
 }
 
-li {
+
+#menu li {
+
+
     float: left;
+
+
+    width: 150px;
+
+
+    position: relative;
+
+
 }
 
-li a {
+
+#menu a {
+
+
+    font-family: "Times New Roman", Times, serif;
+
+
+    font-size: 16px;
+
+
+    color: #FFFFFF;
+
+
+    text-decoration: none;
+
+
+    background-color: #00CCFF;
+
+
     display: block;
 
-    color:blue;
+
+    padding-top: 5px;
+
+
+    padding-right: 5px;
+
+
+    border: 1px solid #00CCFF;
+
 
     text-align: center;
 
-    padding: 14px 16px;
 
-    text-decoration: none;
+    line-height: 30px;
+
+
+    margin-right: 2px;
+
+
 }
 
-li a:hover:not(.active) {
 
-    background-color: #111;
-}
+#menu a:hover {
 
-.active {
 
-    background-color: #f39c12;
-}
-.aktif {
-    background-color: #16a085;
+    background-color: #0099FF;
+
+
 }

@@ -2,3 +2,8 @@ ul#yatay-menu li a:hover{
   color: #4A4E4D;
   background-color:#F6CD61; 
   }
+  .ustmenu{
+    position:fixed; top:0px; left:0px; right:0px; 
+      height:70px; background:red;
+  }
+  

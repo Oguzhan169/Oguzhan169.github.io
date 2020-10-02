@@ -16,7 +16,7 @@
   .dropdown-child {
     display: none;
     background-color: black;
-    min-width: 200px;
+    min-width: 500px;
   }
   .dropdown-child a {
     color: white;

@@ -1,29 +1,4 @@
-.mainmenubtn {
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding:20px;
-    margin-top:20px;
-  }
-  .mainmenubtn:hover {
-    background-color: red;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-child {
-    display: none;
-    background-color: black;
-    min-width: 500px;
-  }
-  .dropdown-child a {
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown:hover .dropdown-child {
-    display: block;
+ul#yatay-menu li a:hover{
+  color: #4A4E4D;
+  background-color:#F6CD61; 
   }

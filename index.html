@@ -6,50 +6,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
 <style>
-   .mainmenubtn {
-     background-color: rgb(10, 143, 204);
-     color: white;
-     border: none;
-     cursor: pointer;
-     padding:20px;
-     margin-top:20px;
-     min-width: 200px;
-     min-block-size:80  ;
-   }
-   .dropdown {
-     position: relative;
-     display: inline-block;
-   }
-   
-   .dropdown-child {
-     display: none;
-     background-color: rgb(63, 56, 56);
-     min-width: 300px;
-   }
-   .dropdown-child a {
-     color: white;
-     padding: 20px;
-     text-decoration: none;
-     display: block;
-   }
-   .dropdown:hover .dropdown-child {
-     display: block;
-   }
+ul#yatay-menu {
+list-style: none;
+margin:0;
+padding:0;
+}
+ul#yatay-menu li {
+display: inline-block;
+padding:0 10px;
+border-bottom:2px solid #3DA4AB;
+margin:auto -2px;
+}
+ul#yatay-menu li a {
+color: #F6CD61;
+display: inline-block;
+font: 14px/100% Arial, Helvetica, sans-serif;
+height: 36px;
+line-height: 36px;
+text-decoration: none;
+vertical-align: middle;
+padding: 0 10px;
+background-color:#4A4E4D; 
+}
+ul#yatay-menu li a:hover{
+color: #4A4E4D;
+background-color:#F6CD61; 
+}
+
  </style>
+ </head>
 
 <body>
- <div class="dropdown">
-   <button class="mainmenubtn">Ana Menü</button>
-   <div class="dropdown-child">
-     <a href="http://wwww.alanadiniz.com/sayfa1.html">AnaMenü</a>
-     <a href="http://wwww.alanadiniz.com/sayfa2.html">Hakkında</a>
-     <a href="http://wwww.alanadiniz.com/sayfa3.html">Matematik Hakkında</a>
-     <a href="http://wwww.alanadiniz.com/sayfa4.html">İletişim</a>
-   </div>
- </div>
+  <ul id="yatay-menu">
+    <li><a href="#">Ana Sayfa</a></li>
+    <li><a href="#">Web Tasarımı</a></li>
+    <li><a href="#">Grafik Animasyon</a></li>
+    <li><a href="#">Veritabanı</a></li>
+    <li><a href="#">Programlama</a></li>
+    </ul>
 </body>
 
 </html>

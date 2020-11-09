@@ -83,21 +83,83 @@ background-color:#F6CD61;
 	
 	color:rgb(255, 253, 253); /*white theme*/
 }
+/*yeni yatay menü*/
+
+ 
+#content{
+    margin-top:70px;
+    height:2000px;
+}
+ 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #4e91b8;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   z-index:222 ;
+  
+   
+}
+ 
+ul li {
+    float:left;
+    border-bottom: 3px solid #65d1b6;
+}
+ 
+ul li.menu-right {
+    float: center;
+}
+ 
+ul li a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+ 
+ul li.active {
+    background-color: #387188;
+    border-bottom: 3px solid #dd9d27;
+}
+
+ul li:hover:not(.active) {
+    background-color: #068587;
+    border-bottom: 3px solid #d89c2e;
+}
+
+
 </style>
+
  </head>
-
-<body>
-
+ <body>
   <div class="card">
-  <div class="example">  
-  <ul id="yatay-menu">
-    <li><a href="index.html">Ana Sayfa</a></li>
-    <li><a href="mathakkında.html">Matematik Hakkında</a></li>
-    <li><a href="sınavlar.html">Sınavlar</a></li>
-    </ul>
+    <div class="example">
+      <br><br><br>
+ <div id="menu" div style="position:absolute;" >
+  <ul id="alt">
+      <li class="active">
+          <a href="index.html">Anasayfa</a>
+      </li>
+      <li>
+          <a href="mathakkında.html">Matematik hakkında</a>
+      </li>
+      <li>
+          <a href="sınavlar.html">Sınavlar</a>
+      </li>
+
+  </ul>
+</div>
+
+</div>
     <hr color=black;>
     <center> <img src="https://www.hayatarehber.com/wp-content/uploads/2017/08/matematik-1-min.jpg" width=344px; height=200px;></center>
-    <script>
+   <!--lgs ye kalan-->
+   <script>
     var countDownDate = new Date("2021/06/05 09:00:00").getTime(); //geri sayılacak ileri zamanki bir tarihi milisaniye cinsinden elde ediyoruz
       var dayText	= "Gün";
       var hourText	= "Saat";
@@ -134,6 +196,7 @@ background-color:#F6CD61;
 
   </div>
   </div>
+  <!--sağ tık iptal--->
 <SCRIPT language=JavaScript>
 document.oncontextmenu = function(){return false}
 if(document.layers) 

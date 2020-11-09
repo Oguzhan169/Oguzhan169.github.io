@@ -53,18 +53,78 @@
      body{
        background-image:url(d1aceadebb.jpg);
      }
+     /*yeni yatay menü*/
+
+ 
+#content{
+    margin-top:70px;
+    height:2000px;
+}
+ 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #4e91b8;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   z-index:222 ;
+  
    
+}
+ 
+ul li {
+    float:left;
+    border-bottom: 3px solid #65d1b6;
+}
+ 
+ul li.menu-right {
+    float: center;
+}
+ 
+ul li a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+ 
+ul li.active {
+    background-color: #387188;
+    border-bottom: 3px solid #dd9d27;
+}
+
+ul li:hover:not(.active) {
+    background-color: #068587;
+    border-bottom: 3px solid #d89c2e;
+}
+
      </style>
+
 </head>
+
 <body>
 
  <div class="card">
   <div class="example">
-  <ul id="yatay-menu">
-    <li><a href="index.html">Ana Sayfa</a></li>
-    <li><a href="mathakkında.html">Matematik Hakkında</a></li>
-    <li><a href="sınavlar.html">Sınavlar</a></li>
-    </ul>
+    <br><br><br>
+    <div id="menu" div style="position:absolute;" >
+      <ul id="alt">
+          <li>
+              <a href="index.html">Anasayfa</a>
+          </li>
+          <li class="active">
+              <a href="mathakkında.html">Matematik hakkında</a>
+          </li>
+          <li>
+              <a href="sınavlar.html">Sınavlar</a>
+          </li>
+    
+      </ul>
+    </div>
     <hr color=black;>
   <center><u><h1>Matematik' in Tarihçesi</h1></u></center>
   <strong><p>Matematik insanlık tarihinin en eski bilimlerinden biridir. Çok eskiden matematik, sayıların ve şekillerin ilmi olarak tanımlanırdı.Matematigin yazili belgelere dayali 4500 yillik bir tarihi vardir. Bu zaman dilimi içinde, matematigin gelisimi 5 döneme ayrilir.<br>

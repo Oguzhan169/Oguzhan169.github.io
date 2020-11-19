@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-
+<link rel="stylesheet" href="d.less">
+<script src="m.js"></script>
 <style>
 ul#yatay-menu {
 list-style: none;
@@ -164,7 +165,12 @@ height:150px;
 }
 */
 
+
+/*animation css*/
+
+
 </style>
+
 <!--9.sınıf taktir teşekkür hesaplama-->
 <script type="text/javascript">
  function hesapla(){
@@ -489,6 +495,12 @@ height:150px;
       return Math.round(value * multiplier) / multiplier;
   }
   </script>
+<script>
+  $(window).load(function(){
+$('.yukleniyor').hide(); // Loader divini gizle
+$('.site').show(); // Diğer loader dışındakileri bir dive al ilk olarak sonra onu göster :)
+});
+</script>
 
  </head>
  <body>
@@ -513,7 +525,22 @@ height:150px;
 <div class="card">
   <div class="example"><br><br><br><br>
     <hr color=black;>
-    <center> <img src="https://www.hayatarehber.com/wp-content/uploads/2017/08/matematik-1-min.jpg" width=344px; height=200px;></center>
+    <!--animation-->
+    <div id="particles-background" class="vertical-centered-box"></div>
+<div id="particles-foreground" class="vertical-centered-box"></div>
+
+<div class="vertical-centered-box">
+  <div class="content">
+    <div class="loader-circle"></div>
+    <div class="loader-line-mask">
+      <div class="loader-line"></div>
+    </div>
+    <svg width="36px" height="24px" viewBox="0 0 36 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M8.98885921,23.8523026 C8.8942483,23.9435442 8.76801031,24 8.62933774,24 L2.03198365,24 C1.73814918,24 1.5,23.7482301 1.5,23.4380086 C1.5,23.2831829 1.55946972,23.1428989 1.65570253,23.0416777 L13.2166154,12.4291351 C13.3325814,12.3262031 13.4061076,12.1719477 13.4061076,11.999444 C13.4061076,11.8363496 13.3401502,11.6897927 13.2352673,11.587431 L1.68841087,0.990000249 C1.57298556,0.88706828 1.5,0.733668282 1.5,0.561734827 C1.5,0.251798399 1.73814918,2.85130108e-05 2.03198365,2.85130108e-05 L8.62933774,2.85130108e-05 C8.76855094,2.85130108e-05 8.89532956,0.0561991444 8.98994048,0.148296169 L21.4358709,11.5757407 C21.548593,11.6783875 21.6196864,11.8297916 21.6196864,11.999444 C21.6196864,12.1693815 21.5483227,12.3219261 21.4350599,12.4251432 L8.98885921,23.8523026 Z M26.5774333,23.8384453 L20.1765996,17.9616286 C20.060093,17.8578413 19.9865669,17.703871 19.9865669,17.5310822 C19.9865669,17.3859509 20.0390083,17.2536506 20.1246988,17.153855 L23.4190508,14.1291948 C23.5163648,14.0165684 23.6569296,13.945571 23.8131728,13.945571 C23.9602252,13.945571 24.0929508,14.0082997 24.1894539,14.1092357 L33.861933,22.9913237 C33.9892522,23.0939706 34.0714286,23.2559245 34.0714286,23.4381226 C34.0714286,23.748059 33.8332794,23.9998289 33.5394449,23.9998289 L26.9504707,23.9998289 C26.8053105,23.9998289 26.6733958,23.9382408 26.5774333,23.8384453 Z M26.5774333,0.161098511 C26.6733958,0.0615881034 26.8053105,0 26.9504707,0 L33.5394449,0 C33.8332794,0 34.0714286,0.251769886 34.0714286,0.561706314 C34.0714286,0.743904453 33.9892522,0.905573224 33.861933,1.00822006 L24.1894539,9.89030807 C24.0929508,9.99152926 23.9602252,10.0542579 23.8131728,10.0542579 C23.6569296,10.0542579 23.5163648,9.98354562 23.4190508,9.87063409 L20.1246988,6.8459739 C20.0390083,6.74617837 19.9865669,6.613878 19.9865669,6.46874677 C19.9865669,6.29624305 20.060093,6.14198767 20.1765996,6.03848544 L26.5774333,0.161098511 Z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
+</div>
+    <center> <img src="matematik-1.jpg" width=344px; height=200px;></center>
    <!--lgs ye kalan-->
    <script>
     var countDownDate = new Date("2021/06/06 09:00:00").getTime(); //geri sayılacak ileri zamanki bir tarihi milisaniye cinsinden elde ediyoruz
@@ -551,7 +578,41 @@ height:150px;
     <br><br><br>
     <!--9.sınıf taktir teşekkür hesaplama-->
     <style>
-      form.hnarac {margin:0;padding:0;color:#000000; } form.hnarac > fieldset{background-color:#FFFFFF;clear:both;min-width:inherit;padding:15px;margin:20px 0;border:1px solid #EEEEEE;border-radius:0px;} form.hnarac > fieldset > legend{background-color: #EEEEEE;color:#000000;border-radius:0px;line-height: 1;cursor:default;margin: 0 8px;padding:8px;font-weight:bold;} form.hnarac em {color: #ff0000;font-weight:bold;} form.hnarac > fieldset > ol{padding:0px;margin:0px;list-style-type: none;} form.hnarac > fieldset > ol > li{padding:7px;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;	-ms-flex-wrap: wrap;flex-wrap: wrap;} form.hnarac > fieldset > ol > li > label{font-weight:bold;min-width:180px;white-space:nowrap;cursor:auto;} form.hnarac > fieldset > ol.narrowest > li > label{min-width:130px;} form.hnarac > fieldset > ol.narrower > li > label{min-width:150px;} form.hnarac > fieldset > ol.narrow > li > label{min-width:170px;} form.hnarac > fieldset > ol.wide > li > label{min-width:190px;} form.hnarac > fieldset > ol.wider > li > label{min-width:220px;} form.hnarac > fieldset > ol.widest > li > label{min-width:250px;} form.hnarac > fieldset > ol > li input[type=number], form.hnarac > fieldset > ol > li input[type=text], form.hnarac > fieldset > ol > li textarea, form.hnarac > fieldset > ol > li select {padding:6px;box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.08);border: 1px solid #aaaaaa;margin:0 5px;} form.hnarac > fieldset > ol > li input[type=radio] {width:13px;height:13px;cursor: pointer;} form.hnarac > fieldset > ol > li input[type=checkbox], form.hnarac > fieldset > ol > li label{cursor: pointer;} form.hnarac > fieldset > ol > li input[type=number] {-moz-appearance: textfield;} form.hnarac > fieldset > ol > li input[type=number]::-webkit-inner-spin-button, form.hnarac > fieldset > ol > li input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0} form.hnarac > fieldset > ol > li select {cursor:pointer;max-width:100%;} form.hnarac > fieldset > ol > li textarea {width:100%;height:200px;} form.hnarac > fieldset > ol > li > fieldset {margin:0 5px 0 0;padding:0;border:0;} form.hnarac > fieldset > ol > li > fieldset > label {padding: 7px 0;display:block;} form.hnarac > fieldset > ol > li > fieldset > label:first-child {padding-top:4px;} form.hnarac > fieldset > ol > li .illabel > label, form.hnarac > fieldset > ol > li .illabel > label :first-child {display:inline-block;padding:0;} form.hnarac > fieldset .buttons {display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack: distribute;justify-content:space-around;margin:20px 0;} form.hnarac > fieldset .buttons > button {position:relative;overflow:hidden;cursor:pointer;border:0;border-radius: 4px;padding: 15px 30px;font-size:18px;font-weight:bold; box-shadow: 2px 2px 7px #cccccc;} form.hnarac > fieldset .buttons > button[type=button] {background-color:#3B8CEE;color:#FFFFFF;} form.hnarac > fieldset .buttons > button[type=reset] {background-color:#318fbb;color:#000000;} form.hnarac > fieldset .notlar {margin: 8px;} form.hnarac > fieldset .embedlink {float: right;} form.hnarac > fieldset > ol > li .iw1{width:37px} form.hnarac > fieldset > ol > li .iw2{width:40px} form.hnarac > fieldset > ol > li .iw3{width:44px} form.hnarac > fieldset > ol > li .iw4{width:48px} form.hnarac > fieldset > ol > li .iw5{width:52px} form.hnarac > fieldset > ol > li .iw6{width:56px} form.hnarac > fieldset > ol > li .iw7{width:60px} form.hnarac > fieldset > ol > li .iw8{width:64px} form.hnarac > fieldset > ol > li .iw9{width:68px} form.hnarac > fieldset > ol > li .orn{padding-left: 4px;} form.hnarac > fieldset > ol > li .neg{color:#EF0000;font-weight:bold;} </style>
+      form.hnarac {margin:0;padding:0;color:#000000; }
+       form.hnarac > fieldset{background-color:#FFFFFF;clear:both;min-width:inherit;padding:15px;margin:20px 0;border:1px solid #EEEEEE;border-radius:0px;} 
+       form.hnarac > fieldset > legend{background-color: #f37d7d;color:#000000;border-radius:15px;line-height: 1;cursor:default;margin: 0 8px;padding:8px;font-weight:bold;} 
+       form.hnarac em {color: #ff0000;font-weight:bold;} 
+       form.hnarac > fieldset > ol{padding:0px;margin:0px;list-style-type: none;} 
+       form.hnarac > fieldset > ol > li{padding:7px;margin:0;display:-webkit-box;display:-ms-flexbox;display:flex;	-ms-flex-wrap: wrap;flex-wrap: wrap;}
+       form.hnarac > fieldset > ol > li > label{font-weight:bold;min-width:180px;white-space:nowrap;cursor:auto;}
+       form.hnarac > fieldset > ol.narrowest > li > label{min-width:130px;}
+       form.hnarac > fieldset > ol.narrower > li > label{min-width:150px;}
+       form.hnarac > fieldset > ol.narrow > li > label{min-width:170px;}
+       form.hnarac > fieldset > ol.wide > li > label{min-width:190px;}
+       form.hnarac > fieldset > ol.wider > li > label{min-width:220px;}
+       form.hnarac > fieldset > ol.widest > li > label{min-width:250px;}
+       form.hnarac > fieldset > ol > li input[type=number], 
+       form.hnarac > fieldset > ol > li input[type=text], 
+       form.hnarac > fieldset > ol > li textarea,
+       form.hnarac > fieldset > ol > li select {padding:6px;box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.08);border: 1px solid #929292;margin:0 5px;} 
+       form.hnarac > fieldset > ol > li input[type=radio] {width:13px;height:13px;cursor: pointer;}
+       form.hnarac > fieldset > ol > li input[type=checkbox],
+       form.hnarac > fieldset > ol > li label{cursor: pointer;}
+       form.hnarac > fieldset > ol > li input[type=number] {-moz-appearance: textfield;}
+       form.hnarac > fieldset > ol > li input[type=number]::-webkit-inner-spin-button, 
+       form.hnarac > fieldset > ol > li input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0} 
+       form.hnarac > fieldset > ol > li select {cursor:pointer;max-width:100%;} 
+       form.hnarac > fieldset > ol > li textarea {width:100%;height:200px;}
+       form.hnarac > fieldset > ol > li > fieldset {margin:0 5px 0 0;padding:0;border:0;}
+       form.hnarac > fieldset > ol > li > fieldset > label {padding: 7px 0;display:block;}
+       form.hnarac > fieldset > ol > li > fieldset > label:first-child {padding-top:4px;} 
+       form.hnarac > fieldset > ol > li .illabel > label, form.hnarac > fieldset > ol > li .illabel > label :first-child {display:inline-block;padding:0;}
+        form.hnarac > fieldset .buttons {display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack: distribute;justify-content:space-around;margin:20px 0;}
+         form.hnarac > fieldset .buttons > button {position:relative;overflow:hidden;cursor:pointer;border:0;border-radius: 4px;padding: 15px 30px;font-size:18px;font-weight:bold; box-shadow: 2px 2px 7px #c78d8d;}
+     
+       form.hnarac > fieldset .notlar {margin: 8px;} form.hnarac > fieldset .embedlink {float: right;}
+ 
+                 </style>
     <form class="hnarac">  <fieldset class="meb"> <legend>9.Sınıf Takdir Teşekkür Hesaplama Aracı</legend> <div class="notlar" id="not"><em>NOT:</em> Bu hesaplama aracı 2020 - 2021 eğitim yılınna uyumlu olarak hazırlanmıştır. Puanını boş bıraktığınız dersler için hesaplamalarda 0 puan kullanılacaktır.</div>
       <ol>
         <li id="matematik"> <label for="matematikpuan"></label>Matematik :<input type="text" name="sinav1" id="sinav1"><br/></li>
@@ -576,10 +637,11 @@ height:150px;
         <input type="reset" />
       </ol>
     </form><br><br><br>
-	    <h1>Lgs Puan Hesaplama</h1>	    
+    <div><br><br><br></div>	    
  <!--lgs hesaplama-->
  
-<form action="javascript:hesaplama(); javascript:compute();">
+<form action="javascript:hesaplama(); javascript:compute();"  class="hnarac">
+  <fieldset class="meb"><legend><h3>LGS PUAN HESAPLAMA</h3></legend></fieldset>
    <table id="tableid">
 <thead id="theadid">
    <tr id = "trid">
@@ -642,11 +704,15 @@ height:150px;
  
 </form>
 
-<br><br><br><br>
+ <br><br><br>
  <!--- <div class="footer">
    <small>2019-2020 Tüm Hakkı sahiptiir.</small>
    </div>-->
+<div><br><br><br>
 
+
+  
+</div>
   </div>
   </div>
   <!--sağ tık iptal--->

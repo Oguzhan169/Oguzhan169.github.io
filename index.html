@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-<link rel="stylesheet" href="d.less">
-<script src="m.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" href="d.css">
+
 <style>
 ul#yatay-menu {
 list-style: none;
@@ -168,6 +169,8 @@ height:150px;
 
 /*animation css*/
 
+
+   
 
 </style>
 
@@ -495,12 +498,7 @@ height:150px;
       return Math.round(value * multiplier) / multiplier;
   }
   </script>
-<script>
-  $(window).load(function(){
-$('.yukleniyor').hide(); // Loader divini gizle
-$('.site').show(); // Diğer loader dışındakileri bir dive al ilk olarak sonra onu göster :)
-});
-</script>
+
 
  </head>
  <body>
@@ -526,7 +524,25 @@ $('.site').show(); // Diğer loader dışındakileri bir dive al ilk olarak sonr
   <div class="example"><br><br><br><br>
     <hr color=black;>
     <!--animation-->
-    
+    <!-- Preloader -->
+ 
+<div id="preloader">
+   <div id="status">&nbsp;</div>
+</div>
+
+  
+<script type="text/javascript">
+   //<![CDATA[
+       $(window).load(function() { // makes sure the whole site is loaded
+           $('#status').fadeOut(); // will first fade out the loading animation
+           $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+           $('body').delay(350).css({'overflow':'visible'});
+       })
+   //]]>
+</script>
+
+
+
 
     <center> <img src="matematik-1.jpg" width=344px; height=200px;></center>
    <!--lgs ye kalan-->
